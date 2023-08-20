@@ -1,0 +1,20 @@
+
+
+.box {
+  border: 1px solid black;
+  width:100%;
+  height:780px;
+  background-color: black;
+
+}
+
+.input {
+    width:33%;
+    margin:auto;
+    margin-top: 100px;
+    color:white;
+    /* border:2px solid white; */
+    /* border-radius: 34px;
+    background-color: white; */
+    /* height: 50px; */
+}
