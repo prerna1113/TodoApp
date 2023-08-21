@@ -6,8 +6,8 @@ import TodoApp from './Component/TodoApp';
 function App() {
   return (
     <div className="App">
-      <Todo />
-      {/* <TodoApp /> */}
+      {/* <Todo /> */}
+      <TodoApp />
       
     </div>
   );
