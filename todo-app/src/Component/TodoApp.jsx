@@ -4,7 +4,7 @@ import styles from './CSS/Todo.module.css'
 
 
 function TodoApp() {
-  const [tasks, setTasks] = useState([]); // Array to store tasks
+  const [tasks, setTasks] = useState([]); 
 
   const addTask = (newTask) => {
     setTasks([...tasks, { text: newTask, showDiv: false }]); // Add new task to the tasks array
@@ -16,8 +16,9 @@ function TodoApp() {
     setTasks(updatedTasks);
   };
 
-
-
+  const resetTask =() =>{
+    setTasks([]);
+  }
 
   return (
     <div>
@@ -38,8 +39,6 @@ function TodoApp() {
 
             </p>
           </Box>
-
-
 
           <form
             onSubmit={(e) => {
@@ -95,6 +94,7 @@ function TodoApp() {
 
           </ul>
           <Button 
+          onClick={resetTask}
           
       className={styles.button}
       size='lg'
