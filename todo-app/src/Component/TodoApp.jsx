@@ -51,17 +51,22 @@ function TodoApp() {
               e.target.reset();
             }}>
             <Box
-              style={{ display: "flex" }}>
+              style={{ display: "flex",
+               }}>
 
 
               <Input
                 style={{
                   backgroundColor: "white",
+                  // margin:"auto",
                   borderRadius: "14px",
                   height: "55px",
                   fontSize: "28px",
-                  marginTop: "15px",
-                  textAlign:"end"
+                  marginTop:"10px",
+                  marginLeft:"10px"
+                
+                  // marginTop: "15px",
+                  
                   
                 }}
                 type="text"
@@ -78,12 +83,13 @@ function TodoApp() {
                   type="submit"> +</Button>
               </Box>
               </Box>
+             
           </form>
         
 
 
           <Box  className={styles.liBox}>
-            <Box>
+           
           <ul>
             {tasks.map((task, index) => (
               <li
@@ -92,34 +98,20 @@ function TodoApp() {
                 key={index}>
                 {task.text}
                 <Box 
-                style={{
-                  border:"1px solid red",
-                  width:"20%",
-                  marginLeft:"80%"
-                 
-                 
-                  // margin
-                }}
+               
                 >
                 <button
-                style={{
-                 
-                  border: "1px solid black",
-                  width:"100%",
-                  borderRadius:"14px",
-                 
-                  
-
-
-                }}
-
+               
+               
                   onClick={() => toggleDiv(index)
                   
-                  }> -</button>
+                  }></button>
                   </Box>
                 {task.showDiv && 
                 <div 
-                style={{ textDecoration : 'line-through'}}
+                style={{ textDecoration : 'line-through',
+                marginTop:"1px"
+              }}
                  >
                   {task.text}
                  
@@ -148,7 +140,8 @@ function TodoApp() {
 
 
         </Box>
-      </Box>
+       
+    
 
     </div>
   );

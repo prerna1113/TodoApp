@@ -11,9 +11,8 @@
 .input {
     width:33%;
     margin:auto;
-   
-   
     color:black;
+   
    
 }
 
@@ -60,7 +59,7 @@
 .liBox {
     margin-left: 1%;
     text-align: center;
-    /* border: 1px solid red; */
+   
     width:100%;
 
 }
@@ -68,17 +67,20 @@
 .li {
     width: 100%;
     height: 55px;
-   
-    /* margin: auto; */
     border: 1px solid white;
     background-color: white;
-    margin-top: 20px;
+    /* margin-left: 20px; */
+   
     border-radius: 18px;
     font-size: 20px;
     text-align: start;
     
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    padding: 10px;
+    
     font-weight: 900;
-    border:1px solid red
+    /* border:1px solid red */
 
 
 }
