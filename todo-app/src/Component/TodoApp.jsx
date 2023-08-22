@@ -5,6 +5,7 @@ import styles from './CSS/Todo.module.css'
 
 function TodoApp() {
   const [tasks, setTasks] = useState([]); 
+  const [flag, setStatus] = useState('true');
 
   const addTask = (newTask) => {
     setTasks([...tasks, { text: newTask, showDiv: false }]); // Add new task to the tasks array
@@ -14,7 +15,8 @@ function TodoApp() {
     const updatedTasks = [...tasks];
     updatedTasks[index].showDiv = !updatedTasks[index].showDiv;
     setTasks(updatedTasks);
-  };
+   
+}
 
   const resetTask =() =>{
     setTasks([]);
@@ -22,6 +24,7 @@ function TodoApp() {
 
   return (
     <div>
+      
       <Box
         className={styles.box}>
         <Box className={styles.input}>
@@ -78,6 +81,7 @@ function TodoApp() {
 
 
           <Box  className={styles.liBox}>
+            <Box>
           <ul>
             {tasks.map((task, index) => (
               <li
@@ -87,12 +91,28 @@ function TodoApp() {
                 {task.text}
                 <button
 
-                  onClick={() => toggleDiv(index)}></button>
-                {task.showDiv && <div>This is the hidden div for task {index + 1}.</div>}
+                  onClick={() => toggleDiv(index)
+                  
+                  }> -</button>
+                {task.showDiv && 
+                <div 
+                style={{ textDecoration : 'line-through'}}
+                 >
+                  {task.text}
+                 
+                 </div>}
               </li>
+             
             ))}
+            
 
           </ul>
+
+
+         
+
+
+          </Box>
           <Button 
           onClick={resetTask}
           
@@ -106,10 +126,6 @@ function TodoApp() {
 
         </Box>
       </Box>
-
-      
-
-
 
     </div>
   );
