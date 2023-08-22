@@ -51,8 +51,8 @@ function TodoApp() {
               e.target.reset();
             }}>
             <Box
-              style={{ display: "flex",
-               }}>
+                display={{ base: 'block', md: 'flex' }} // Stack on small screens, row on medium screens
+                alignItems={{ md: 'center' }}>
 
 
               <Input
