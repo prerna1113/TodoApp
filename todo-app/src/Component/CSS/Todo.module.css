@@ -75,8 +75,10 @@
     margin-top: 20px;
     border-radius: 18px;
     font-size: 20px;
+    text-align: start;
     
     font-weight: 900;
+    border:1px solid red
 
 
 }

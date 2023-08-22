@@ -60,7 +60,9 @@ function TodoApp() {
                   borderRadius: "14px",
                   height: "55px",
                   fontSize: "28px",
-                  marginTop: "15px"
+                  marginTop: "15px",
+                  textAlign:"end"
+                  
                 }}
                 type="text"
                 name="task"
@@ -93,7 +95,10 @@ function TodoApp() {
                 style={{
                   border:"1px solid red",
                   width:"20%",
-                  marginLeft:"70%",
+                  marginLeft:"80%"
+                 
+                 
+                  // margin
                 }}
                 >
                 <button
@@ -101,8 +106,9 @@ function TodoApp() {
                  
                   border: "1px solid black",
                   width:"100%",
-                  borderRadius:"14px"
-
+                  borderRadius:"14px",
+                 
+                  
 
 
                 }}
