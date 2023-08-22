@@ -89,11 +89,28 @@ function TodoApp() {
                 
                 key={index}>
                 {task.text}
+                <Box 
+                style={{
+                  border:"1px solid red",
+                  width:"20%",
+                  marginLeft:"70%",
+                }}
+                >
                 <button
+                style={{
+                 
+                  border: "1px solid black",
+                  width:"100%",
+                  borderRadius:"14px"
+
+
+
+                }}
 
                   onClick={() => toggleDiv(index)
                   
                   }> -</button>
+                  </Box>
                 {task.showDiv && 
                 <div 
                 style={{ textDecoration : 'line-through'}}
