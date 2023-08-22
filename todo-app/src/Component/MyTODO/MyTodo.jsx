@@ -35,7 +35,10 @@ function MyTodo() {
                 <br></br>
 
                 <Button
-                // style={{margin: "auto"}}
+               onClick={()=>{
+                localStorage.setItem("input", JSON.stringify(state));
+
+               }}
                 >
                     submit
 
